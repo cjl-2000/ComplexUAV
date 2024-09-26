@@ -1,0 +1,44 @@
+batch_size: 56
+batch_size_eval: 128
+block: 4
+checkpoint: null
+classes: 701
+dataset: university
+dist_backend: nccl
+dist_url: env://localhost:12358
+drop_rate: 0.4
+epochs: 80
+eval_freq: 1
+eval_gallery_n: -1
+evaluate: false
+gallery_folder_test: /home/hello/data/University-Release/test/gallery_satellite
+gallery_folder_train: /home/hello/data/University-Release/train/satellite
+gpu: 2
+height: 150
+img_size:
+- 384
+- 384
+lr: 0.006
+mean:
+- 0.485
+- 0.456
+- 0.406
+multiprocessing_distributed: null
+normalize_features: true
+print_freq: 10
+prob_flip: 0.5
+query_folder_test: /home/hello/data/University-Release/test/query_drone
+query_folder_train: /home/hello/data/University-Release/train/drone
+rank: 0
+save_path: ./result/
+seed: 1
+share: false
+start_epoch: 0
+std:
+- 0.229
+- 0.224
+- 0.225
+verbose: true
+weight_decay: 0.0005
+workers: 16
+world_size: 1
